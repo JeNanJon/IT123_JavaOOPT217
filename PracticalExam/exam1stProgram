@@ -17,20 +17,14 @@ public class Main {
 		for(int i=0 ; i<names.length;i++) {
 			int sum = 0;
 			int average = 0;
-			int items = 0;
-			
-			
 			
 			System.out.println("\nNAME: "+ names[i].toUpperCase());
 			String[] scoresInt = scores[i].split(" ");
-			
 			System.out.println("SCORES: "+ scores[i]);
-			
-			
 			 
-			 for(int x=0; x<scoresInt.length; x++) {
+			for(int x=0; x<scoresInt.length; x++) {
 				 sum += Integer.parseInt(scoresInt[x]);
-				 items++;		 
+					 
 			 }
 			 average = sum/scoresInt.length;
 			 System.out.println("AVERAGE: "+ average);
@@ -41,7 +35,5 @@ public class Main {
 				 System.out.println("STATUS: FAILED");
 			 }
 		}
-
 	}
-
 }
